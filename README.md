@@ -1,6 +1,6 @@
 # Document Reviewer
 
-A full-stack application for uploading title/legal documents, generating AI-powered title review reports, and discussing them via chat.
+A full-stack application for uploading title/legal documents, generating AI-powered title review reports, and discussing them via chat (not implemented).
 
 ## Architecture
 
