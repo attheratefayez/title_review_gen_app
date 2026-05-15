@@ -17,7 +17,7 @@ services:
       context: ./ui
       args:
         VITE_API_URL: ""
-    container_name: title-review-app-backend
+    container_name: title-review-app-ui
     ports:
       - "8080:80"
     depends_on:

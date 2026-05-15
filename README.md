@@ -62,6 +62,10 @@ Separate module for AI-powered title review generation. See its [README](backend
 ```bash
 docker compose up --build
 ```
+#### Clean up
+```bash
+docker compose down --rmi all --volumes --remove-orphans
+```
 
 Backend at `http://localhost:8000`, UI at `http://localhost:8080`.
 
