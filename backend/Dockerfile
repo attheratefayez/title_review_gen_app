@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 WORKDIR /app
 
@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     openjdk-25-jdk-headless \
     && rm -rf /var/log/apt/lists/*
 
+# install uv
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 COPY pyproject.toml .

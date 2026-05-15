@@ -65,12 +65,13 @@ Get the key, and set it in the docker-compose.yaml file.**
 ```bash
 docker compose up --build
 ```
+
+Backend at `http://localhost:8000`, UI at `http://localhost:8080`.
+
 #### Clean up
 ```bash
 docker compose down --rmi all --volumes --remove-orphans
 ```
-
-Backend at `http://localhost:8000`, UI at `http://localhost:8080`.
 
 ### Local Development
 
