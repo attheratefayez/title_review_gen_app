@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: title-review-app-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - uploads:/tmp/uploads
+      - db_data:/app/data
+    environment:
+      - UPLOAD_DIR=/tmp/uploads
+      - DATABASE_URL=sqlite+aiosqlite:///./data.db
+
+  ui:
+    build:
+      context: ./ui
+      args:
+        VITE_API_URL: ""
+    container_name: title-review-app-backend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  uploads:
+  db_data:

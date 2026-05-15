@@ -8,3 +8,4 @@ vecdb
 *.pyc
 *.db
 *.lock
+*.ini
