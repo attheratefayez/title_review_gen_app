@@ -1,0 +1,10 @@
+# folders
+__pycache__
+.venv
+vecdb
+
+# files
+.env
+*.pyc
+*.db
+*.lock
