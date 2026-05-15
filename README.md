@@ -59,6 +59,9 @@ Separate module for AI-powered title review generation. See its [README](backend
 
 ### Docker Compose (production-like)
 
+**You need to have a HuggingFace api-key to generate report.
+Get the key, and set it in the docker-compose.yaml file.**
+
 ```bash
 docker compose up --build
 ```

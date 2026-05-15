@@ -11,6 +11,7 @@ services:
     environment:
       - UPLOAD_DIR=/tmp/uploads
       - DATABASE_URL=sqlite+aiosqlite:///./data.db
+      - HUGGINGFACEHUB_API_TOKEN=<your-huggingfacehub-api-key>
 
   ui:
     build:
